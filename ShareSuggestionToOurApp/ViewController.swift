@@ -24,12 +24,17 @@ class ViewController: UIViewController {
         self.imagePicker?.delegate = self
     }
 
+    
+    //MARK:- OPEN GALLERY
     @IBAction func addGalleryBtnAction(_ sender: Any) {
         self.present(self.imagePicker!, animated: true, completion: nil)
         
     }
     
 }
+
+
+//MARK:- IMAGE PICKER DELEGATE METHODS
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -54,6 +59,9 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     
     
 }
+
+
+//MARK:- COLLECTIONVIEW DELEGATE METHODS
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
